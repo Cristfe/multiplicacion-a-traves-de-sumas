@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6 -multiplicacion mediante sumas</title>
+</head>
+
+<body>
+    <script>
+        var multiplicando = "a";
+        var multiplicador = "a";
+        var resultado = 0;
+        while (isNaN(parseInt(multiplicando)) || isNaN(parseInt(multiplicador))) {
+            multiplicando = prompt("Introduce el multiplicando: ");
+            multiplicador = prompt("Introduce el multiplicador: ");
+        }
+        multiplicando = parseInt(multiplicando);
+        multiplicador = parseInt(multiplicador);
+        while (multiplicando > 0) {
+            resultado = resultado + multiplicador;
+            multiplicando = multiplicando - 1;
+        }
+        alert(resultado);
+    </script>
+
+</body>
+
+</html>
